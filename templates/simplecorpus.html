@@ -60,6 +60,12 @@
                 if (lang == "hi-gondi") {
                   text = "आज मौसम सुहावना है। हमें शाम को बाहर जाना चाहिए।"
                 }
+		if (lang == "fr-sw") {
+                	text = "Il semble que la question était trop facile pour toi. La prochaine fois, je devrai en faire une un peu plus difficile."
+                }    
+		if (lang == "sw-fr") {
+			text = "Inaonekana ulizo ilikuwa rahisi kwako. Siku ingine nitaifanya ulizo moja ya nguvu zaidi kidogo."
+		}
                 console.log(text)
                 $("#corpusinput").val(text);
                 $("#corpusinput").focus();
@@ -83,9 +89,12 @@
                 <div class="col-3">
                   <div class="row py-2">
                     <label for="sourcelang">Source Language</label>
-                    <select class="form-control"  id="src"
-                      <option value="en">English</option value="en">
+                    <select class="form-control"  id="src">
                       <option value="hi">Hindi</option>
+                      <option value="en">English</option>
+                      <option value="ta">Tamil</option>
+		      <option value="sw">Congolese Swahili</option>
+		      <option value="fr">French</option>
                     </select>
                   </div>
                   
@@ -96,6 +105,8 @@
                       <option value="en">English</option value="en">
                       <option value="hi">Hindi</option value="en">
                       <option value="ta">Tamil</option>
+		      <option value="sw">Congolese Swahili</option>
+                      <option value="fr">French</option>
                       <!-- <option value="gondi" onselect="limitTgtOptions">Gondi</option value="en"> -->
                     </select>
                   </div>

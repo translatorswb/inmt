@@ -1,31 +1,31 @@
 {
     "engines" : {
-        "ta-en": {
-            "src": "ta",
-            "tgt": "en",
-            "model": "taen_final_step_100000.pt",
-            "src_bpe": "bpe/bpe_codes_taen",
-            "tgt_bpe": null,
+        "sw-fr": {
+            "src": "sw",
+            "tgt": "fr",
+            "model": "monomix-sw-fr-intwb-s001-i001-t001_best.pt",
+            "src_bpe": "BPE-monomix-6000.codes",
+            "tgt_bpe": "BPE-monomix-6000.codes",
             "provide_help": false,
             "active": true
         },
-        "en-ta": {
-            "src": "en",
-            "tgt": "ta",
-            "model": "enta_final_step_100000.pt",
-            "src_bpe": null,
-            "tgt_bpe": null,
-            "provide_help": true,
-            "active": false
+        "fr-sw": {
+            "src": "fr",
+            "tgt": "sw",
+            "model": "mtedmix-fr-sw-intwb-s001-i001-t001_best.pt",
+            "src_bpe": "BPE-mtedmix-6000.codes",
+            "tgt_bpe": "BPE-mtedmix-6000.codes",
+            "provide_help": false,
+            "active": true
         },
         "hi-en": {
             "src": "hi",
             "tgt": "en",
-            "model": "hien.pt",
-            "src_bpe": "bpe/bpe_codes_hihi",
-            "tgt_bpe": "bpe/bpe_codes_hien",
+            "model": "full_iitb_bpe_hien.pt",
+            "src_bpe": null,
+            "tgt_bpe": null,
             "provide_help": false,
-            "active": true
+            "active": false
         },
         "en-hi": {
             "src": "en",
@@ -34,7 +34,7 @@
             "src_bpe": null,
             "tgt_bpe": null,
             "provide_help": true,
-            "active": true
+            "active": false
         }
     }
 }
